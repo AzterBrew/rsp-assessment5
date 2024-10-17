@@ -32,7 +32,7 @@ $results = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($results) === 1) {
     $row = mysqli_fetch_assoc($results);
-    if ($row['user_name'] === $uname && $row['password'] === $pass) {
+    if ($row['user_name'] == $uname && $row['password'] == $pass) {
         echo 'Logged In!';
         $_SESSION['user_name'] = $row['user_name'];
         $_SESSION['password'] = $row['password'];
@@ -40,12 +40,9 @@ if (mysqli_num_rows($results) === 1) {
         header("Location: main.php");
         exit();
     } 
-    else {
-        header("Location: index.php?error=Incorrect User Name or Password");
-        exit();
-    }
+    
 } else {
-    header("Location: index.php");
+    header("Location: index.php?error=Incorrect User Name or Password");
     exit();
 }
 

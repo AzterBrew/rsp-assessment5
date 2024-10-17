@@ -173,6 +173,10 @@ header h1,a {
 .error {
     color: #f6ebf9;
 
+.error-login {
+    background-color: #441414;
+}
+
 }
 
 input {

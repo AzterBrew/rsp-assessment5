@@ -9,12 +9,12 @@
 </head>
 <body>
     <div id="login">
-        <form action="login.php" method="post" class="indexform">
+        <form action="login.php" method="POST" class="indexform">
             <h1>Rock, Paper Scissors</h1>
             <h2>User Login</h2>
             <?php
                 if (isset($_GET['error'])) {
-                    echo '<p class="error">' . $_GET['error'] . '</p>';
+                    echo '<p class="error-login">' . $_GET['error'] . '</p>';
                 }
             ?>
             <label>User Name</label>
