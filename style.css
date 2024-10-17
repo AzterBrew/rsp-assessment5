@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body {
+    background: #018c96;    
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* text-align: center; */
+    height: 100vh;
+    min-height: 100%;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.bg-main {
+    background-image: url("./images/fnaf1.jpg");
+    width: 100%;
+    margin-top: auto;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-fight {
+    background-image: url("./images/fnaf2.png");
+    height: 100%;
+    margin-top: auto;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+}
+
+* {
+    box-sizing: padding-box;
+    font-family: "Afacad Flux", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+
+}
+
+.indexform {
+    width: 1000px;
+    border: 3px solid #018c96;
+    padding: 20px;
+    background: #efb52b;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.action label, .action input[type=checkbox], .action p {
+    /* width: 1000px; */
+    margin: auto;
+    display: inline-block;
+    width: auto;
+    font-weight: 500;
+    font-size: 25px;
+    color: #f6ebf9;
+    text-shadow: 5px 35px 50px #441414;
+} 
+
+#choices {
+    width: auto;
+    font-weight: 500;
+    font-size: 25px;
+    color: #f6ebf9;
+
+}
+
+#belowheader-fight h2 {
+    background: #dc5340;
+    border-radius: 10px;
+    padding: 20px 50px;
+    display: flex;
+    top: 30%;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+#belowheader-main h2 {
+    background: #dc5340;
+    border-radius: 10px;
+    padding: 20px 50px;
+    display: flex;
+    /* top: 30%; */
+    margin-top: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+#choices h3 {
+    color: #f6ebf9;
+}
+
+#login{
+    text-align: center;
+}
+
+/* h2 {
+    margin-bottom: 40px;
+} */
+
+/* .navbar  {
+    list-style-type: none;
+    padding:0px;
+    margin: 0px;    
+} */
+
+.parent {
+    display: flex;
+    margin-top: 25%;
+    text-align: center;
+}
+
+.child {
+    display: inline-block;
+    margin: 5% 5% 5% 5%;
+    padding: 2%;
+    color: #f6ebf9;
+    background: #dc5340;
+    opacity: 90%;
+    border-radius: 10%;
+}
+
+.child h1{
+    text-align: center;
+}
+
+#img-end {
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 50%;
+}
+
+header {
+    /* margin: 0 0 0 0; */
+    /* display: flex;     */
+    /* display: block; */
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    /* width: 50%; */
+    align-items: center;
+    font-size: 20px;
+    padding: 1px;    
+}
+
+header h1,a {
+    color: #f6ebf9;
+}
+
+#headermain {
+    background-color: #441414;
+}
+
+#headerfight {
+    background-color: #441414;
+}
+
+.error {
+    color: #f6ebf9;
+
+}
+
+input {
+    display: block;
+    font-size: large;
+    border: 2px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.img-btn {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    
+}
+
+.img-btn p {
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.img-btn img {
+    vertical-align: middle;
+    margin-right: 5px;
+    height:15%;
+    border-radius: 4px;
+
+}
+
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 1000 */
+
+.afacad-flux-fontstyle {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
