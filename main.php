@@ -46,7 +46,7 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
 
                 </div>
                 <div class="action">
-                    <label><input type="checkbox" id="act[]" name="act[]" value="Hook">Hook</label>
+                    <label><input type="checkbox" id="act[]" name="act[]" value="Pencil">Pencil</label>
                 </div>
                 <?php
                     if (isset($_GET['error'])) {
