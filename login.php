@@ -1,7 +1,6 @@
 <?php
 
 session_start();
-include "dbcon.php";
 
 if (isset($_POST['uname']) && isset($_POST['password'])) {
     function verify($data) {
