@@ -28,7 +28,6 @@ if (empty($uname)) {
 // TEST THIS IN THE INDEX PHP IF IT WORKS
 
 if (mysqli_num_rows($results) === 1) {
-    $row = mysqli_fetch_assoc($results);
     if ($setname === $uname && $setpass === $pass) {
         echo 'Logged In!';
         $_SESSION['user_name'] = $uname;
