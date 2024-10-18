@@ -4,9 +4,7 @@
     body {
         background: #e0dcdc;    
         display: flex;
-        /* justify-content: center; */
         align-items: center;
-        /* text-align: center; */
         height: 100vh;
         min-height: 100%;
         flex-direction: column;
@@ -25,9 +23,9 @@
     input {
         display: block;
         font-size: large;
-        border: 2px solid #404040; /* Border color */
-        background-color: #f1eeee; /* Input background color */
-        border-radius: 5px; /* Rounded corners */
+        border: 2px solid #404040; 
+        background-color: #f1eeee; 
+        border-radius: 5px;
         padding: 5px;
         margin-left: auto;
         margin-right: auto;
@@ -35,8 +33,8 @@
     }
     
     input::placeholder {
-        color: #000; /* Placeholder text color */
-        opacity: 0.7; /* Optional: Make it slightly transparent */
+        color: #000; 
+        opacity: 0.7; 
     }
         
     .bg-main {
@@ -78,7 +76,6 @@
     }
 
     .action label, .action input[type=checkbox], .action p {
-        /* width: 1000px; */
         margin: auto;
         display: inline-block;
         width: auto;
@@ -90,13 +87,13 @@
     } 
 
     #choices {
-        position: relative; /* Set the position to relative for absolute positioning of the blackboard */
+        position: relative; 
         width: auto;
         font-weight: 500;
         font-size: 30px;
         color: #ffffff;
-        text-align: center; /* Center the text */
-        margin: 25px 0; /* Add vertical spacing */
+        text-align: center; 
+        margin: 25px 0; 
     }
 
     #lblch {
@@ -104,16 +101,16 @@
     }
 
     .blackboard-background {
-        position: absolute; /* Position the background image absolutely */
-        margin-top: 10%; /* Align to the top */
-        left: 50%; /* Center horizontally */
-        transform: translateX(-75%); /* Shift left by half its width */
-        z-index: -1; /* Send it behind the text */
+        position: absolute; 
+        margin-top: 10%; 
+        left: 50%; 
+        transform: translateX(-75%); 
+        z-index: -1; 
     }
 
     .blackboard {
-        width: 150%; /* Set a fixed width */
-        height: auto; /* Maintain height */
+        width: 150%; 
+        height: auto; 
     }
 
     #belowheader-fight h2 {
@@ -137,9 +134,6 @@
         display: flex;
         margin-top: 70%;
         font-weight: 200;
-        
-        /* top: 30%; */
-        
     }
 
     #belowheader-main div {
@@ -162,16 +156,6 @@
         font-weight: 100;
     }
 
-    /* h2 {
-        margin-bottom: 40px;
-    } */
-
-    /* .navbar  {
-        list-style-type: none;
-        padding:0px;
-        margin: 0px;    
-    } */
-
     .parent {
         display: inline-block;
         margin-top: auto;
@@ -189,7 +173,6 @@
         border-radius:10%;
         opacity: 90%;
         border: 2px solid #000;
-        /* margin-top: 10%; */
     }
 
     .child h1{
@@ -200,26 +183,19 @@
     #img-end {
         display: block;
         margin: auto;
-        width: 75vw; /* Set width to 50% of the viewport width */
-        height: 650; /* Automatically adjust height to maintain aspect ratio */
-        max-height: 100vh; /* Limit height to the viewport height */
-        object-fit: contain; /* Maintain aspect ratio within the bounds */
+        width: 75vw; 
+        height: 650; 
+        max-height: 100vh; 
+        object-fit: contain; 
         
     }
 
     header {
-        /* margin: 0 0 0 0; */
-        /* display: flex;     */
-        /* display: block; */
-        text-align: center;
         align-items: center;
         justify-content: space-between;
-        /* margin-top: 20px; */
         position: fixed;
-        /* top: 0; */
         left: 0;
         right: 0;
-        /* width: 50%; */
         align-items: center;
         font-size: 20px;
         padding: 1px;    
@@ -254,53 +230,51 @@
     }
 
     .navbar {
-        display: flex; /* Use flexbox for layout */
-        justify-content: space-between; /* Space between items */
-        align-items: center; /* Vertically center items */
-        padding: 10px; /* Padding for the navbar */
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+        padding: 10px; 
         background-color: #ded0be;
         height: 80px;
     }
 
     .title {
-        margin: 0; /* Remove default margin for h1 */
+        margin: 0; 
     }
 
     .logout {
-        display: inline-block; /* Makes the link behave like a block element */
-        text-decoration: none; /* Remove underline */
-        color: #000000; /* Logout link color */
-        font-weight: bold; /* Bold text */
-        padding: 5px 10px; /* Padding for the box */
-        border: 2px solid rgba(0, 0, 0, 0.5); /* 50% transparent border */
-        border-radius: 5px; /* Rounded corners */
-        background-color: #e0e0e0; /* Background color of the logout button */
-        transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
-        margin-left: 25px; /* Left margin */
-        margin-right: 25px; /* Right margin */
+        display: inline-block; 
+        text-decoration: none; 
+        color: #000000; 
+        font-weight: bold; 
+        padding: 5px 10px; 
+        border: 2px solid rgba(0, 0, 0, 0.5); 
+        border-radius: 5px;
+        background-color: #e0e0e0; 
+        transition: background-color 0.3s, color 0.3s;
+        margin-left: 25px; 
+        margin-right: 25px;
     }
 
     .logout:hover {
-        background-color: #d0d0d0; /* Slightly darker on hover for effect */
-        color: #000; /* Keep text color on hover */
+        background-color: #d0d0d0; 
+        color: #000; 
     }
 
     .logo {
-        height: 80px; /* Set the height of the logo to 50px */
+        height: 80px; 
         width: 150px;
-        margin-right: 80px; /* Add some space between the logo and title */
+        margin-right: 80px; 
     }
 
     .title {
-        display: flex; /* Use flexbox for the title */
-        align-items:le; /* Center the title vertically */
-
+        display: flex;
+        align-items:le; 
     }
 
     #headermain {
         background-color:#e0e0e0;
         border: #000000;
-        
     }
 
     #headerfight {
@@ -311,11 +285,9 @@
         color: #ffffff;
         font-style: italic;
         font-weight: 50px;
-
+    }
     .error-login {
         background-color: #441414;
-    }
-
     }
 
     input {
@@ -332,15 +304,13 @@
         padding: 10px 20px;
         margin-top: 5px;
         font-size: 25px;
-
     }
 
     .img-btn {
         display: inline-block;
         padding: 10px;
         border: 1px solid #000000;
-        cursor: pointer;
-        
+        cursor: pointer;       
     }
 
     .img-btn p {
@@ -357,11 +327,7 @@
         margin-top: 20px;
 
     }
-
-
-    /* <uniquifier>: Use a unique and descriptive class name
-    <weight>: Use a value from 100 to 1000 */
-
+    
     .afacad-flux-fontstyle {
         font-family: "Afacad Flux", sans-serif;
         font-optical-sizing: auto;

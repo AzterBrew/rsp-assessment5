@@ -20,31 +20,25 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
                 <h1>Let's play ROCK, PAPER, SCISSORS</h1>
                 <a href="logout.php" id="in">Logout</a>
             </nav>
-
         </header>
-
             <div id="belowheader-main">
                 <div class="blackboard-background">
                     <img src="./images/blackboard.png" alt="Blackboard" class="blackboard">
                 </div>
                 <h2>Hello, <?php echo ucwords($_SESSION['user_name']); ?></h2>
             </div>
-            <div id="choices">
-                
+            <div id="choices">                
                 <label id="lblch">Choose only three available actions:</label>
             </div>
             <form action="action.php" method="POST">
                 <div class="action">
                     <label><input type="checkbox" name="act[]" value="Rock">Rock</label>
-
                 </div>
                 <div class="action">
                     <label><input type="checkbox" id="act[]" name="act[]" value="Paper">Paper</label>
-
                 </div>
                 <div class="action">
                     <label><input type="checkbox" id="act[]" name="act[]" value="Scissors">Scissors</label>
-
                 </div>
                 <div class="action">
                     <label><input type="checkbox" id="act[]" name="act[]" value="Pencil">Pencil</label>
@@ -59,7 +53,7 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
         </body>
     </html>
 
-    <?php
+<?php
 } else {
     header("Location: index.php");
     exit();

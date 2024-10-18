@@ -10,10 +10,8 @@ if (isset($_POST['act']) && !empty($_POST['act'])) {
     }
     header("Location: main.php?error=Select 3 to proceed");
     exit();
-    // Now you can process the selected actions
     
 } else {
-    // Handle the case where no checkboxes were selected
     header("Location: main.php?error=Please select actions");
     exit();
 }

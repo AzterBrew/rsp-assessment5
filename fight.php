@@ -60,38 +60,16 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
                         '</p> </button>';
                     }
                     ?>
-                    <!-- <button type="submit" value="submit">Proceed</button> -->
                     
                 </form>
 
         </body>
         </html>         
-
-
-
-
-
-
-
-
-
-
-
-        <?php    
+    <?php    
     }
 
-    // function presenceCheck($value, $array){
-    //     if (in_array($value, $array)){
-    //         return true;
-    //     } else {
-    //         return false;
-    //     }
-
-    // }
 } else {
     header("Location: index.php");
     exit();
 }
-
-    
     ?>

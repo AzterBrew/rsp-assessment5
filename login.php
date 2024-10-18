@@ -24,8 +24,6 @@ if (empty($uname)) {
     exit();
 }
 
-// THIS IS IF IM GONNA SHOW VALIDATION SEPARATELY 
-// TEST THIS IN THE INDEX PHP IF IT WORKS
 if ($uname === $setname && $pass === $setpass) {
     echo 'Logged in!';
     $_SESSION['user_name'] = $uname;

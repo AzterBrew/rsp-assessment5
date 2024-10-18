@@ -24,10 +24,7 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
         echo 'no detected choice';
     }
 
-    
-    ?>
-
-
+?>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -59,7 +56,6 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
                 </div>
                 <div id="cpu" class="child">
                     <h1>CPU chose <?php echo $comchoice ?> </h1>
-                    <!-- <img src=" " alt=""> -->
                 </div>
             </div>        
         </div>
@@ -81,7 +77,7 @@ function compRandom($max){
 
 function res($cpu,$user, $u){
     $c = 'CPU';
-    $r = 'Rock'; $p = 'Paper'; $s = 'Scissors'; $h = 'Hook';     
+    $r = 'Rock'; $p = 'Paper'; $s = 'Scissors'; $h = 'Pencil';     
 
     if ($cpu === $user) {
         return 'tie';
@@ -95,7 +91,7 @@ function res($cpu,$user, $u){
     } else if ($user == $p) {
         if ($cpu == $r) {
             return $u;
-        } else { //paper loses to sci and hook
+        } else { 
             return $c;
         }
     } else if ($user == $s) {
@@ -105,18 +101,12 @@ function res($cpu,$user, $u){
             return $c;
         }
     } else if ($user == $h) {
-        if ($cpu == $r) {
-            return $c;
-        } else {
+        if ($cpu == $p) {
             return $u;
+        } else {
+            return $c;
         }
     }
-    // r > sc && h
-    // s > p
-    // p > r
-    // h > p && s
-
-
     return 0;
 } 
 
