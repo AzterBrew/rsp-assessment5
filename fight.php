@@ -39,11 +39,11 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
             </header>
 
             <div id="belowheader-fight">
-                <h2>Time to pick, <?php echo ucwords($_SESSION['user_name']); ?> </h2>
-            </div>
-            <div id="choices">
-                <label> Choose what to fight against the computer : </label>
-            </div>
+                    <h2>Time to pick, <?php echo ucwords($_SESSION['user_name']); ?> </h2>
+                </div>
+                <div id="choices">
+                    <label> Choose what to fight against the computer : </label>
+                </div>
 
             <form action="outcome.php" method="POST">
                     <?php 
