@@ -10,7 +10,7 @@
 <body>
     <div id="login">
         <form action="login.php" method="POST" class="indexform">
-            <h1>Rock, Paper Scissors</h1>
+            <img src="./images/Rock_Paper_Scissors.png" alt="">
             <h2>User Login</h2>
             <?php
                 if (isset($_GET['error'])) {
