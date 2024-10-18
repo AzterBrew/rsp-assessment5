@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/kg-broken-vessels-sketch');
 
 body {
-    background: #3e3d3e;    
+    background: #e0dcdc;    
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -13,9 +14,20 @@ body {
     min-height: 100%;
     overflow-x: hidden;
 }
+.input-box label{
+    font-size: medium;
+}
 
+label{
+    text-align: right;
+}
+
+::placeholder input{
+
+    border-radius: 20px;
+    
+}
 .bg-main {
-    background-image: url("./images/Rock_Paper_Scissors.png");
     width: 100%;
     margin-top: auto;
     background-repeat: repeat-y;
@@ -34,7 +46,7 @@ body {
 
 * {
     box-sizing: padding-box;
-    font-family: "Afacad Flux", serif;
+    font-family: "KG Broken Vessels Sketch", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
@@ -46,10 +58,11 @@ body {
     width: 1000px;
     border: 3px solid #000000;
     padding: 20px;
-    background: #3e3d3e;
+    background: #ded0be;
     border-radius: 20px;
-    font-weight: 400;
+    font-weight:100;
     font-size: 22px;
+    margin-top: 30px;
 }
 
 .action label, .action input[type=checkbox], .action p {
@@ -58,21 +71,37 @@ body {
     display: inline-block;
     width: auto;
     font-weight: 500;
-    font-size: 25px;
-    color: #f6ebf9;
-    text-shadow: 5px 35px 50px #441414;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 5px 35px 50px #ded0be;
+    padding: 10px;
 } 
 
 #choices {
+    position: relative; /* Set the position to relative for absolute positioning of the blackboard */
     width: auto;
     font-weight: 500;
-    font-size: 25px;
-    color: #f6ebf9;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center; /* Center the text */
+    margin: 25px 0; /* Add vertical spacing */
+}
 
+.blackboard-background {
+    position: absolute; /* Position the background image absolutely */
+    top: 0; /* Align to the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Shift left by half its width */
+    z-index: -1; /* Send it behind the text */
+}
+
+.blackboard {
+    width: 1400px; /* Set a fixed width */
+    height: 500px; /* Maintain height */
 }
 
 #belowheader-fight h2 {
-    background: #dc5340;
+    background: #b1a8a7;
     border-radius: 10px;
     padding: 20px 50px;
     display: flex;
@@ -84,7 +113,7 @@ body {
 }
 
 #belowheader-main h2 {
-    background: #dc5340;
+    background: #ded0be;
     border-radius: 10px;
     padding: 20px 50px;
     display: flex;
@@ -96,11 +125,16 @@ body {
 }
 
 #choices h3 {
-    color: #f6ebf9;
+    color: #ffffff;
 }
 
-#login{
+#login {
     text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+#login h2{
+    font-weight: 100;
 }
 
 /* h2 {
@@ -123,7 +157,7 @@ body {
     display: inline-block;
     margin: 5% 5% 5% 5%;
     padding: 2%;
-    color: #f6ebf9;
+    color: #ffffff;
     background: #dc5340;
     opacity: 90%;
     border-radius: 10%;
@@ -159,11 +193,58 @@ header {
 }
 
 header h1,a {
-    color: #f6ebf9;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Vertically center items */
+    padding: 10px; /* Padding for the navbar */
+    background-color: rgba(222,208, 190, 0.75); /* 25% opacity for background */
+    height: 100px;
+}
+
+.title {
+    margin: 0; /* Remove default margin for h1 */
+}
+
+.logout {
+    display: inline-block; /* Makes the link behave like a block element */
+    text-decoration: none; /* Remove underline */
+    color: #000000; /* Logout link color */
+    font-weight: bold; /* Bold text */
+    padding: 5px 10px; /* Padding for the box */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* 50% transparent border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #e0e0e0; /* Background color of the logout button */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+    margin-left: 25px; /* Left margin */
+    margin-right: 25px; /* Right margin */
+}
+
+.logout:hover {
+    background-color: #d0d0d0; /* Slightly darker on hover for effect */
+    color: #000; /* Keep text color on hover */
+}
+
+.logo {
+    height: 80px; /* Set the height of the logo to 50px */
+    width: 150px;
+    margin-right: 80px; /* Add some space between the logo and title */
+}
+
+.title {
+    display: flex; /* Use flexbox for the title */
+    align-items:le; /* Center the title vertically */
+
 }
 
 #headermain {
-    background-color: #441414;
+    background-color:#e0e0e0;
+    border: #000000;
+    
 }
 
 #headerfight {
@@ -171,7 +252,7 @@ header h1,a {
 }
 
 .error {
-    color: #f6ebf9;
+    color: #000000;
 
 .error-login {
     background-color: #441414;
@@ -182,7 +263,7 @@ header h1,a {
 input {
     display: block;
     font-size: large;
-    border: 2px solid #ccc;
+    border: 2px solid #000000;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
@@ -198,7 +279,7 @@ button {
 .img-btn {
     display: inline-block;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     cursor: pointer;
     
 }

@@ -10,17 +10,24 @@
 <body>
     <div id="login">
         <form action="login.php" method="POST" class="indexform">
-            <img src="./images/Rock_Paper_Scissors.png" alt="">
+            <img src="./images/RockPaperScissorsLogo.png" alt="">
             <h2>User Login</h2>
             <?php
                 if (isset($_GET['error'])) {
                     echo '<p class="error-login">' . $_GET['error'] . '</p>';
                 }
+            
             ?>
-            <label>User Name</label>
-            <input type="text" name="uname" placeholder="User Name">
+            <div class="input-box">
+            <label>Username</label>
+            <input type="text" name="uname" placeholder="Username">
+            </div>
+
+            <div class="input-box">
             <label>Password</label>
             <input type="password" name="password" placeholder="Password">
+   
+            </div>
 
             <button type="submit">Login</button>
         </form>
