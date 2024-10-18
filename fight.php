@@ -4,12 +4,6 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
     if (isset($_SESSION['actions'])) {
         $selection = $_SESSION['actions'];
         $amt = count($selection);
-
-        // $rock = presenceCheck('Rock',$selection); 
-        // $paper = presenceCheck('Paper',$selection); 
-        // $scissors = presenceCheck('Scissors',$selection); 
-        // $hook = presenceCheck('Hook',$selection);
-        echo 'rock is ' . $rock;
     ?>
         <!DOCTYPE html>
         <html lang="en">
@@ -69,7 +63,7 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
                 </form>
 
         </body>
-        </html>
+        </html>         
 
 
 

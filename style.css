@@ -1,40 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
-@import url('https://fonts.cdnfonts.com/css/kg-broken-vessels-sketch');
+    @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+    @import url('https://fonts.cdnfonts.com/css/kg-broken-vessels-sketch');
 
-body {
-    background: #e0dcdc;    
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    /* text-align: center; */
-    height: 100vh;
-    min-height: 100%;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-}
-.input-box label{
-    font-size: medium;
-}
+    body {
+        background: #e0dcdc;    
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* text-align: center; */
+        height: 100vh;
+        min-height: 100%;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+    }
+    .input-box label{
+        font-size: medium;
+    }
 
-label{
-    text-align: right;
-}
+    label{
+        text-align: right;
+    }
 
-::placeholder input{
+    ::placeholder input{
 
-    border-radius: 20px;
-    
-}
-.bg-main {
-    width: 100%;
-    margin-top: auto;
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: cover;
-}
+        border-radius: 20px;
+        
+    }
+    .bg-main {
+        width: 100%;
+        margin-top: auto;
+        background-repeat: repeat-y;
+        background-position: center;
+        background-size: cover;
+    }
 
+<<<<<<< HEAD
 .bg-fight {
     background-image: url("./images/sofa.jpg");
     height: 100%;
@@ -43,270 +44,284 @@ label{
     background-position: center;
     background-size: cover;
 }
+=======
+    .bg-fight {
+        background-image: url("./images/fnaf2.png");
+        height: 100%;
+        margin-top: auto;
+        background-repeat: repeat-y;
+        background-position: center;
+        background-size: cover;
+    }
+>>>>>>> 1f88358f2dbaaf6d9610e7f810cd32a710b6ab6c
 
-* {
-    box-sizing: padding-box;
-    font-family: "KG Broken Vessels Sketch", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-        "slnt" 0;
+    * {
+        box-sizing: padding-box;
+        font-family: "KG Broken Vessels Sketch", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings:
+            "slnt" 0;
 
-}
+    }
 
-.indexform {
-    width: 1000px;
-    border: 3px solid #000000;
-    padding: 20px;
-    background: #ded0be;
-    border-radius: 20px;
-    font-weight:100;
-    font-size: 22px;
-    margin-top: 30px;
-}
+    .indexform {
+        width: 1000px;
+        border: 3px solid #000000;
+        padding: 20px;
+        background: #ded0be;
+        border-radius: 20px;
+        font-weight:100;
+        font-size: 22px;
+        margin-top: 30px;
+    }
 
-.action label, .action input[type=checkbox], .action p {
-    /* width: 1000px; */
-    margin: auto;
-    display: inline-block;
-    width: auto;
-    font-weight: 500;
-    font-size: 30px;
-    color: #ffffff;
-    text-shadow: 5px 35px 50px #ded0be;
-    padding: 10px;
-} 
+    .action label, .action input[type=checkbox], .action p {
+        /* width: 1000px; */
+        margin: auto;
+        display: inline-block;
+        width: auto;
+        font-weight: 500;
+        font-size: 30px;
+        color: #ffffff;
+        text-shadow: 5px 35px 50px #ded0be;
+        padding: 10px;
+    } 
 
-#choices {
-    position: relative; /* Set the position to relative for absolute positioning of the blackboard */
-    width: auto;
-    font-weight: 500;
-    font-size: 30px;
-    color: #ffffff;
-    text-align: center; /* Center the text */
-    margin: 25px 0; /* Add vertical spacing */
-}
+    #choices {
+        position: relative; /* Set the position to relative for absolute positioning of the blackboard */
+        width: auto;
+        font-weight: 500;
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center; /* Center the text */
+        margin: 25px 0; /* Add vertical spacing */
+    }
 
-.blackboard-background {
-    position: absolute; /* Position the background image absolutely */
-    top: 0; /* Align to the top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Shift left by half its width */
-    z-index: -1; /* Send it behind the text */
-}
+    #lblch {
+        margin-top: 50%;
+    }
 
-.blackboard {
-    width: 1400px; /* Set a fixed width */
-    height: 500px; /* Maintain height */
-}
+    .blackboard-background {
+        position: absolute; /* Position the background image absolutely */
+        margin-top: 10%; /* Align to the top */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-75%); /* Shift left by half its width */
+        z-index: -1; /* Send it behind the text */
+    }
 
-#belowheader-fight h2 {
-    background: #b1a8a7;
-    border-radius: 10px;
-    padding: 20px 50px;
-    display: flex;
-    top: 30%;
-    margin-top: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-}
+    .blackboard {
+        width: 150%; /* Set a fixed width */
+        height: auto; /* Maintain height */
+    }
 
-#belowheader-main h2 {
-    background: #ded0be;
-    border-radius: 10px;
-    padding: 20px 50px;
-    display: flex;
-    /* top: 30%; */
-    margin-top: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-}
+    #belowheader-fight h2 {
+        background: #b1a8a7;
+        border-radius: 10px;
+        padding: 20px 50px;
+        display: flex;
+        top: 30%;
+        margin-top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
 
-#choices h3 {
-    color: #ffffff;
-}
+    #belowheader-main h2 {
+        background: #ded0be;
+        border-radius: 10px;
+        padding: 5px 50px;
+        display: flex;
+        /* top: 30%; */
+        margin-top: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
 
-#login {
-    text-align: center;
-    margin: 20px 0 40px 0;
-}
+    #choices h3 {
+        color: #ffffff;
+    }
 
-#login h2{
-    font-weight: 100;
-}
+    #login {
+        text-align: center;
+        margin: 20px 0 40px 0;
+    }
 
-/* h2 {
-    margin-bottom: 40px;
-} */
+    #login h2{
+        font-weight: 100;
+    }
 
-/* .navbar  {
-    list-style-type: none;
-    padding:0px;
-    margin: 0px;    
-} */
+    /* h2 {
+        margin-bottom: 40px;
+    } */
 
-.parent {
-    display: flex;
-    margin-top: 25%;
-    text-align: center;
-}
+    /* .navbar  {
+        list-style-type: none;
+        padding:0px;
+        margin: 0px;    
+    } */
 
-.child {
-    display: inline-block;
-    margin: 5% 5% 5% 5%;
-    padding: 2%;
-    color: #ffffff;
-    background: #dc5340;
-    opacity: 90%;
-    border-radius: 10%;
-}
+    .parent {
+        display: flex;
+        margin-top: 25%;
+        text-align: center;
+    }
 
-.child h1{
-    text-align: center;
-}
+    .child {
+        display: inline-block;
+        margin: 5% 5% 5% 5%;
+        padding: 2%;
+        color: #ffffff;
+        background: #dc5340;
+        opacity: 90%;
+        border-radius: 10%;
+    }
 
-#img-end {
-    display: block;
-    margin: auto;
-    align-items: center;
-    width: 50%;
-}
+    .child h1{
+        text-align: center;
+    }
 
-header {
-    /* margin: 0 0 0 0; */
-    /* display: flex;     */
-    /* display: block; */
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    /* margin-top: 20px; */
-    position: fixed;
-    /* top: 0; */
-    left: 0;
-    right: 0;
-    /* width: 50%; */
-    align-items: center;
-    font-size: 20px;
-    padding: 1px;    
-}
+    #img-end {
+        display: block;
+        margin: auto;
+        align-items: center;
+        width: 50%;
+    }
 
-header h1,a {
-    color: #ffffff;
-    font-weight: 100;
-}
+    header {
+        /* margin: 0 0 0 0; */
+        /* display: flex;     */
+        /* display: block; */
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        /* margin-top: 20px; */
+        position: fixed;
+        /* top: 0; */
+        left: 0;
+        right: 0;
+        /* width: 50%; */
+        align-items: center;
+        font-size: 20px;
+        padding: 1px;    
+    }
 
-.navbar {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Vertically center items */
-    padding: 10px; /* Padding for the navbar */
-    background-color: rgba(222,208, 190, 0.75); /* 25% opacity for background */
-    height: 100px;
-}
+    header h1,a {
+        color: #ffffff;
+        font-weight: 100;
+    }
 
-.title {
-    margin: 0; /* Remove default margin for h1 */
-}
+    .navbar {
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Space between items */
+        align-items: center; /* Vertically center items */
+        padding: 10px; /* Padding for the navbar */
+        background-color: rgba(222,208, 190, 0.75); /* 25% opacity for background */
+        height: 100px;
+    }
 
-.logout {
-    display: inline-block; /* Makes the link behave like a block element */
-    text-decoration: none; /* Remove underline */
-    color: #000000; /* Logout link color */
-    font-weight: bold; /* Bold text */
-    padding: 5px 10px; /* Padding for the box */
-    border: 2px solid rgba(0, 0, 0, 0.5); /* 50% transparent border */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #e0e0e0; /* Background color of the logout button */
-    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
-    margin-left: 25px; /* Left margin */
-    margin-right: 25px; /* Right margin */
-}
+    .title {
+        margin: 0; /* Remove default margin for h1 */
+    }
 
-.logout:hover {
-    background-color: #d0d0d0; /* Slightly darker on hover for effect */
-    color: #000; /* Keep text color on hover */
-}
+    .logout {
+        display: inline-block; /* Makes the link behave like a block element */
+        text-decoration: none; /* Remove underline */
+        color: #000000; /* Logout link color */
+        font-weight: bold; /* Bold text */
+        padding: 5px 10px; /* Padding for the box */
+        border: 2px solid rgba(0, 0, 0, 0.5); /* 50% transparent border */
+        border-radius: 5px; /* Rounded corners */
+        background-color: #e0e0e0; /* Background color of the logout button */
+        transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+        margin-left: 25px; /* Left margin */
+        margin-right: 25px; /* Right margin */
+    }
 
-.logo {
-    height: 80px; /* Set the height of the logo to 50px */
-    width: 150px;
-    margin-right: 80px; /* Add some space between the logo and title */
-}
+    .logout:hover {
+        background-color: #d0d0d0; /* Slightly darker on hover for effect */
+        color: #000; /* Keep text color on hover */
+    }
 
-.title {
-    display: flex; /* Use flexbox for the title */
-    align-items:le; /* Center the title vertically */
+    .logo {
+        height: 80px; /* Set the height of the logo to 50px */
+        width: 150px;
+        margin-right: 80px; /* Add some space between the logo and title */
+    }
 
-}
+    .title {
+        display: flex; /* Use flexbox for the title */
+        align-items:le; /* Center the title vertically */
 
-#headermain {
-    background-color:#e0e0e0;
-    border: #000000;
-    
-}
+    }
 
-#headerfight {
-    background-color: #441414;
-}
+    #headermain {
+        background-color:#e0e0e0;
+        border: #000000;
+        
+    }
 
-.error {
-    color: #000000;
+    #headerfight {
+        background-color: #441414;
+    }
 
-.error-login {
-    background-color: #441414;
-}
+    .error {
+        color: #000000;
 
-}
+    .error-login {
+        background-color: #441414;
+    }
 
-input {
-    display: block;
-    font-size: large;
-    border: 2px solid #000000;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    margin-bottom: 10px;
-}
+    }
 
-button {
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-size: 25px;
-}
+    input {
+        display: block;
+        font-size: large;
+        border: 2px solid #000000;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
 
-.img-btn {
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid #000000;
-    cursor: pointer;
-    
-}
+    button {
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 25px;
+    }
 
-.img-btn p {
-    vertical-align: middle;
-    margin-right: 5px;
-    border-radius: 4px;
-}
+    .img-btn {
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid #000000;
+        cursor: pointer;
+        
+    }
 
-.img-btn img {
-    vertical-align: middle;
-    margin-right: 5px;
-    height:15%;
-    border-radius: 4px;
+    .img-btn p {
+        vertical-align: middle;
+        margin-right: 5px;
+        border-radius: 4px;
+    }
 
-}
+    .img-btn img {
+        vertical-align: middle;
+        margin-right: 5px;
+        height:15%;
+        border-radius: 4px;
+
+    }
 
 
-/* <uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 100 to 1000 */
+    /* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 100 to 1000 */
 
-.afacad-flux-fontstyle {
-    font-family: "Afacad Flux", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    font-variation-settings:
-        "slnt" 0;
-}
+    .afacad-flux-fontstyle {
+        font-family: "Afacad Flux", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-variation-settings:
+            "slnt" 0;
+    }

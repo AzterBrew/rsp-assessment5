@@ -24,13 +24,14 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
         </header>
 
             <div id="belowheader-main">
+                <div class="blackboard-background">
+                    <img src="./images/blackboard.png" alt="Blackboard" class="blackboard">
+                </div>
                 <h2>Hello, <?php echo ucwords($_SESSION['user_name']); ?></h2>
             </div>
             <div id="choices">
-            <div class="blackboard-background">
-            <img src="./images/blackboard.png" alt="Blackboard" class="blackboard">
-            </div>
-            <label>Choose only three available actions:</label>
+                
+                <label id="lblch">Choose only three available actions:</label>
             </div>
             <form action="action.php" method="POST">
                 <div class="action">
@@ -54,10 +55,8 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
                     }
                 ?>
                 <button type="submit" value="submit">Proceed</button>
-
             </form>
-
-    </body>
+        </body>
     </html>
 
     <?php
