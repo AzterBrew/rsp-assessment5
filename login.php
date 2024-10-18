@@ -26,22 +26,13 @@ if (empty($uname)) {
 
 // THIS IS IF IM GONNA SHOW VALIDATION SEPARATELY 
 // TEST THIS IN THE INDEX PHP IF IT WORKS
+if ($uname === $setname && $pass === $setpass) {
+    echo 'Logged in!';
+    $_SESSION['user_name'] = $uname;
+    $_SESSION['password'] = $pass;
 
-if (mysqli_num_rows($results) === 1) {
-    if ($setname === $uname && $setpass === $pass) {
-        echo 'Logged In!';
-        $_SESSION['user_name'] = $uname;
-        $_SESSION['password'] = $pass;       
-        header("Location: main.php");
-        exit();
-    } 
-    else {
-        header("Location: index.php?error=Incorrect User Name or Password");
-        exit();
-    }
+    header("Location: admin.php");    
 } else {
-    header("Location: index.php");
+    header("Location: index.php?error=Incorrect User Name or Password");
     exit();
 }
-
-
