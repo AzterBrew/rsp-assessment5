@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
     if (isset($_POST['selection'])) {
         $selection = $_POST['selection'];
 

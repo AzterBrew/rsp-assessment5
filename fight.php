@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
     if (isset($_SESSION['actions'])) {
         $selection = $_SESSION['actions'];
         $amt = count($selection);
@@ -39,6 +39,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                         ?>
                     </h1>
                     <a href="logout.php">Logout</a>
+                    <a href="main.php">Back to Start</a>
                 </nav>
 
             </header>
