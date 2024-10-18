@@ -69,7 +69,7 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
                 </form>
 
         </body>
-        </html>
+        </html>         
 
 
 
