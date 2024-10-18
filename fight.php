@@ -16,6 +16,8 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
         <body class="bg-fight">
             <header id="headerfight">
                 <nav class="navbar">
+            <img src="./images/RockPaperScissorsLogo.png" alt="Logo" class="logo">
+
                     <h1>Fight against Computer with 
                         <?php 
                             $i = 0;
@@ -32,8 +34,8 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
                             }  
                         ?>
                     </h1>
-                    <a href="logout.php">Logout</a>
-                    <a href="main.php">Back to Start</a>
+                    <a href="logout.php" id="in">Logout</a>
+                    <a href="main.php" id="in">Back to Start</a>
                 </nav>
 
             </header>

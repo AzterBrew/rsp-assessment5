@@ -16,9 +16,9 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
     <body class="bg-main">
         <header id="headermain">
             <nav class="navbar">
-            <img src="./images/RockPaperScissorsLogo.png" alt="Logo" class="logo">
+                <img src="./images/RockPaperScissorsLogo.png" alt="Logo" class="logo">
                 <h1>Let's play ROCK, PAPER, SCISSORS</h1>
-                <a href="logout.php">Logout</a>
+                <a href="logout.php" id="in">Logout</a>
             </nav>
 
         </header>
@@ -51,7 +51,7 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
                 </div>
                 <?php
                     if (isset($_GET['error'])) {
-                        echo '<p class="error">' . $_GET['error'] . '</p>';
+                        echo '<p class="error"> * ' . $_GET['error'] . ' *</p>';
                     }
                 ?>
                 <button type="submit" value="submit">Proceed</button>

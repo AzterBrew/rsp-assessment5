@@ -10,14 +10,14 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
         $results = res($comchoice, $userchoice, $_SESSION['user_name']);
         $userstat = " ";
         if ($results == $_SESSION['user_name']) {
-            $userstat = "win.png";
+            $userstat = "win";
         } elseif ($results == 'CPU') {
-            $userstat = "lose.gif";
+            $userstat = "lose";
         } else {
-            $userstat = "tie.jpg";
+            $userstat = "tie";
         }
         $isTie = false;
-        if ($results == 'tie') {
+        if ($results == "tie") {
             $isTie = true;
         }
     } else {
@@ -39,6 +39,7 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
     <body class="bg-main">
         <header id="headermain">
             <nav class="navbar">
+            <img src="./images/RockPaperScissorsLogo.png" alt="Logo" class="logo">
                 <h1>RESULTS : 
                     <?php 
                     if($isTie){
@@ -47,14 +48,14 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
                         echo ucwords($results) . ' WON!';
                         } ?> 
                 </h1>
-                <a href="logout.php">Logout</a>
-                <a href="main.php">Back to Start</a>
+                <a href="logout.php" id="res">Logout</a>
+                <a href="main.php" id="res">Back to Start</a>
             </nav>
         </header>
         <div id="belowheader-main">
             <div class="parent">
                 <div id="user" class="child">
-                    <h1><?php echo ucwords($_SESSION['user_name']); ?> chose <?php echo $userchoice ?> </h1>
+                    <h1> USER chose <?php echo $userchoice ?> </h1>
                 </div>
                 <div id="cpu" class="child">
                     <h1>CPU chose <?php echo $comchoice ?> </h1>
@@ -63,7 +64,7 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
             </div>        
         </div>
         <?php 
-            echo '<img id="img-end" src="./images/' . strtolower(htmlspecialchars($userstat)) . '" alt="stat">' ; 
+            echo '<img id="img-end" src="./images/' . strtolower(htmlspecialchars($userstat)) . '.gif" alt="stat">' ; 
         ?> 
     </body>
     </html>

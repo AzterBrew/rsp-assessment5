@@ -22,11 +22,23 @@
         text-align: right;
     }
 
-    ::placeholder input{
-
-        border-radius: 20px;
-        
+    input {
+        display: block;
+        font-size: large;
+        border: 2px solid #404040; /* Border color */
+        background-color: #f1eeee; /* Input background color */
+        border-radius: 5px; /* Rounded corners */
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
     }
+    
+    input::placeholder {
+        color: #000; /* Placeholder text color */
+        opacity: 0.7; /* Optional: Make it slightly transparent */
+    }
+        
     .bg-main {
         width: 100%;
         margin-top: auto;
@@ -105,7 +117,7 @@
     }
 
     #belowheader-fight h2 {
-        background: #b1a8a7;
+        background: #e1dede;
         border-radius: 10px;
         padding: 20px 50px;
         display: flex;
@@ -114,6 +126,8 @@
         margin-left: auto;
         margin-right: auto;
         align-items: center;
+        font-weight: 200;
+        border: 2px solid #000;
     }
 
     #belowheader-main h2 {
@@ -121,13 +135,15 @@
         border-radius: 10px;
         padding: 5px 50px;
         display: flex;
-        margin-top: 60%;
+        margin-top: 70%;
+        font-weight: 200;
+        
         /* top: 30%; */
         
     }
 
     #belowheader-main div {
-        margin-top: 7%;
+        margin-top: 8%;
         margin-left: auto;
         margin-right: auto;
         align-items: center;
@@ -157,30 +173,38 @@
     } */
 
     .parent {
-        display: flex;
-        margin-top: 25%;
+        display: inline-block;
+        margin-top: auto;
         text-align: center;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .child {
         display: inline-block;
-        margin: 5% 5% 5% 5%;
-        padding: 2%;
-        color: #ffffff;
-        background: #dc5340;
+        margin: 15% 5% 5% 5%;
+        padding: 5px;
+        color: #000000;
+        background-color:#f1eeee;
+        border-radius:10%;
         opacity: 90%;
-        border-radius: 10%;
+        border: 2px solid #000;
+        /* margin-top: 10%; */
     }
 
     .child h1{
         text-align: center;
+        font-weight: 150;
     }
 
     #img-end {
         display: block;
         margin: auto;
-        align-items: center;
-        width: 50%;
+        width: 75vw; /* Set width to 50% of the viewport width */
+        height: 650; /* Automatically adjust height to maintain aspect ratio */
+        max-height: 100vh; /* Limit height to the viewport height */
+        object-fit: contain; /* Maintain aspect ratio within the bounds */
+        
     }
 
     header {
@@ -202,8 +226,31 @@
     }
 
     header h1,a {
-        color: #ffffff;
+        color: #000000;
         font-weight: 100;
+        padding: 0px 10px;
+        margin: 2.5px;        
+    }
+
+    header h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header a {
+        background-color:#f1eeee;
+        border-radius: 5px;
+        border: 2px solid #404040;
+        text-decoration: none;      
+        padding: 5px 45px;     
+
+    }
+
+    #res {
+        display: inline-block;
+        margin-left: 0.5px;
+        text-align: right;
+
     }
 
     .navbar {
@@ -211,8 +258,8 @@
         justify-content: space-between; /* Space between items */
         align-items: center; /* Vertically center items */
         padding: 10px; /* Padding for the navbar */
-        background-color: rgba(222,208, 190, 0.75); /* 25% opacity for background */
-        height: 100px;
+        background-color: #ded0be;
+        height: 80px;
     }
 
     .title {
@@ -261,7 +308,9 @@
     }
 
     .error {
-        color: #000000;
+        color: #ffffff;
+        font-style: italic;
+        font-weight: 50px;
 
     .error-login {
         background-color: #441414;
@@ -281,8 +330,9 @@
 
     button {
         padding: 10px 20px;
-        margin-top: 20px;
+        margin-top: 5px;
         font-size: 25px;
+
     }
 
     .img-btn {
