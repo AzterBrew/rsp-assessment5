@@ -35,7 +35,6 @@
         background-size: cover;
     }
 
-<<<<<<< HEAD
 .bg-fight {
     background-image: url("./images/sofa.jpg");
     height: 100%;
@@ -44,16 +43,6 @@
     background-position: center;
     background-size: cover;
 }
-=======
-    .bg-fight {
-        background-image: url("./images/fnaf2.png");
-        height: 100%;
-        margin-top: auto;
-        background-repeat: repeat-y;
-        background-position: center;
-        background-size: cover;
-    }
->>>>>>> 1f88358f2dbaaf6d9610e7f810cd32a710b6ab6c
 
     * {
         box-sizing: padding-box;
@@ -132,8 +121,13 @@
         border-radius: 10px;
         padding: 5px 50px;
         display: flex;
+        margin-top: 60%;
         /* top: 30%; */
-        margin-top: 100%;
+        
+    }
+
+    #belowheader-main div {
+        margin-top: 7%;
         margin-left: auto;
         margin-right: auto;
         align-items: center;
