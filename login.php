@@ -31,7 +31,7 @@ if ($uname === $setname && $pass === $setpass) {
     $_SESSION['user_name'] = $uname;
     $_SESSION['password'] = $pass;
 
-    header("Location: admin.php");    
+    header("Location: main.php");    
 } else {
     header("Location: index.php?error=Incorrect User Name or Password");
     exit();
