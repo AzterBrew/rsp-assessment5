@@ -16,6 +16,7 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
     <body class="bg-main">
         <header id="headermain">
             <nav class="navbar">
+            <img src="./images/RockPaperScissorsLogo.png" alt="Logo" class="logo">
                 <h1>Let's play ROCK, PAPER, SCISSORS</h1>
                 <a href="logout.php">Logout</a>
             </nav>
@@ -26,7 +27,10 @@ if (isset($_SESSION['password']) && isset($_SESSION['user_name'])) {
                 <h2>Hello, <?php echo ucwords($_SESSION['user_name']); ?></h2>
             </div>
             <div id="choices">
-                    <label> Choose only three available actions : </label>
+            <div class="blackboard-background">
+            <img src="./images/blackboard.png" alt="Blackboard" class="blackboard">
+            </div>
+            <label>Choose only three available actions:</label>
             </div>
             <form action="action.php" method="POST">
                 <div class="action">
